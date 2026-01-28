@@ -22,3 +22,4 @@ let booleanIsLoggedIn = Boolean(isLoggedIn)
 let someNumber =33
 let stringNumber = String(someNumber)
 console.log( typeof stringNumber);
+console.log("check git push");
