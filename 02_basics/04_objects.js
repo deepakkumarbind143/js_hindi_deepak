@@ -30,7 +30,7 @@ const obj2 = {3: "a", 5: "b"}
 
 //*
 const obj3 = {...obj1, ...obj2}
-console.log(obj3);
+// console.log(obj3);
 
 
 const users = [
@@ -59,10 +59,36 @@ const users = [
 
 users[1].email // this is the way of calling object from list
 
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));// give array in array  where first one will be key and second one is value
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));//check whether property is there or not
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));// give array in array  where first one will be key and second one is value
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));//check whether property is there or not
 
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courceInstructor: "deepak"
+}
+
+//course.courseInstructor
+
+//*object destucture happening here
+const {courceInstructor: instructor} = course
+console.log(instructor);
+
+
+// JSON  formate (javaScript object noteation)
+{
+    "name": "deepak",
+    "course": "apnaCourse",
+    "proce": "free"
+}
+
+[
+    {},
+    {},
+    {},
+    {},
+]
