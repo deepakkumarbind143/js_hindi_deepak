@@ -80,11 +80,11 @@ console.log(instructor);
 
 
 // JSON  formate (javaScript object noteation)
-{
-    "name": "deepak",
-    "course": "apnaCourse",
-    "proce": "free"
-}
+// {
+//     "name": "deepak",
+//     "course": "apnaCourse",
+//     "proce": "free"
+// }
 
 [
     {},
