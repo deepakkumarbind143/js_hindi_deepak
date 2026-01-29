@@ -37,3 +37,7 @@ const heros = ["shaktiman", "naagraj", "doga"];
 
  console.log(typeof id);
  
+ // +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ // Stack (primitive), Heap(Non-Primitive)
+//in stack we get copies and in Heap we get refference of data
