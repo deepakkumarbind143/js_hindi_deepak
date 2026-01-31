@@ -1,5 +1,5 @@
-// console.log("2" > 1);// "2"=>2
-// console.log("02" > 1); // 0 does not matther "02"=> 2
+// console.log("2" > 1);//  it will convert "2"=>2
+// console.log("02" > 1); // 0 does not matther,  it will convert "02"=> 2
 
 
 

@@ -2,7 +2,7 @@ const accountId=144553
 let accountEmail="exaple@gmail.com"
 var accountPassword="12345"
   accountCity="Jaipur"
- let accountState;
+ let accountState;//this is undefined
 
 
 console.log(accountId);

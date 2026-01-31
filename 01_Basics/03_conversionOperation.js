@@ -52,7 +52,7 @@ let str3 = str1 + str2
 
 // x is 4; y is 3
 let x = 3;
-const y = x++; // here x will be 3 and return 4 to x variable
+const y = x++; // here y will be 3 and return 4 to x variable
 // console.log(`x is ${x} , y is ${y}`);
 
 

@@ -19,6 +19,11 @@ map.set('IN', "INDIA")//this will not count and come as output
 map.set('USA', "United States of America")
 map.set('Fr', "France")
 
+// this will not work because map is not itterable
+// for (const key in map) {  
+// console.log(key);
+// }
+
 // console.log(map);
 
 
