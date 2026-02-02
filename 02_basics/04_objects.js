@@ -1,6 +1,7 @@
 // const tinderUser = new Object() // singleton object
 const tinderUser = {}// non singleton object(literal object)
 
+///way to assign key and values
  tinderUser.id= "123abc"
  tinderUser.name = "sammy"
  tinderUser.isLoggedIn = false
@@ -29,7 +30,7 @@ const obj2 = {3: "a", 5: "b"}
 // const obj3 = Object.assign({}, obj1, obj2) //it will work  with this {},but you can avoid the target
 
 //*
-const obj3 = {...obj1, ...obj2}
+// const obj3 = {...obj1, ...obj2}
 // console.log(obj3);
 
 
@@ -77,6 +78,7 @@ const course = {
 //*object destucture happening here
 const {courceInstructor: instructor} = course
 console.log(instructor);
+
 
 
 // JSON  formate (javaScript object noteation)

@@ -26,7 +26,7 @@ JsUser.emailId = "newemail@gmail.com"//this is the way to overwrite object value
 // Object.freeze(JsUser);//it will freeze the change 
 // JsUser.emailId = "willnnnnoteUpfdate@gmail.com"
 
-console.log(JsUser);
+// console.log(JsUser);
 
 JsUser.greeting = function(){
     console.log("Hello js User")
