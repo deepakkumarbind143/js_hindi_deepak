@@ -1,3 +1,5 @@
+//strings are immutable
+
 const name = "Deepak "
 const repoCount = 50
 
@@ -12,22 +14,23 @@ const gameName = new String(`deepak-bind`)
 // console.log(gameName.__proto__);
 
 
-console.log(gameName.length);    //11 object always counts keys, so its start from 1
-console.log(gameName.charAt(2));//e
-console.log(gameName.indexOf('p'));//3
+// console.log(gameName.length);    //11, object always counts keys, so its start from 1
+// console.log(gameName.charAt(2));//e
+// console.log(gameName.indexOf('p'));//3
 
-console.log( typeof gameName);//object
+// console.log( typeof gameName);//object
 
+/*None of these methods modify the original string.
+ They create new strings by copying character ranges.*/
 
-
-// const newString = gameName.substring(0, 4)
+// const newString = gameName.substring(0, 4) // this will count first four string
 // console.log(newString);
 
-// const anotherString = gameName.slice(-8, 5)
+// const anotherString = gameName.slice(-8, 5)//pa , 11 - 8 = 3 => pa, p=4, a=5
 // console.log(anotherString);
 
 
-// const newStringOne = "   deepak  "
+// const newStringOne = "   deepak  "// it removes whitespace,tabe
 // console.log(newStringOne.trim());
 
 

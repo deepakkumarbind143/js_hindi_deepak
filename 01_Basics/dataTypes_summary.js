@@ -8,10 +8,9 @@ const isLoggedIn = false
 const outSideTemp = null
 let userEmail;
 
-const id = Symbol('123')
-const anotherId= Symbol('123')
-
-// console.log(id === anotherId);
+// const id = Symbol('123')// 123 is decription  or label not a value
+// const anotherId= Symbol('123')
+// console.log(id === anotherId);//false, because symbol is guaranteed to be unic
 
 const bigNumber = 455233261424224326112n
 

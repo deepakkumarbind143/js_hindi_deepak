@@ -4,8 +4,8 @@ let score="deepak"
 // console.log(typeof(score));
 
 let valueInNumber= Number(score)
-// console.log(typeof valueInNumber)
-// console.log(valueInNumber)
+// console.log(typeof valueInNumber)//number
+// console.log(valueInNumber)// Nan
 
 //"33" =>33    // we convert this in number
 //"33an"=>NaN  // we canont convert this in number
@@ -21,7 +21,8 @@ let booleanIsLoggedIn = Boolean(isLoggedIn)
 
 let someNumber =33
 let stringNumber = String(someNumber)
-// console.log( typeof stringNumber);
+// console.log( typeof stringNumber);//string
+// console.log(  stringNumber);//33
 // console.log("check git push");
 
 
@@ -30,12 +31,12 @@ let stringNumber = String(someNumber)
 
 let value=3
 let negValue= -value
-// console.log(negValue);
+// console.log(negValue);//-3
 
 let str1 = "hello"
 let str2 = " deepak"
 let str3 = str1 + str2
-// console.log(str3);
+// console.log(str3);// hello deepak
 
 
 // console.log("1" + 1);        // 11
@@ -45,7 +46,7 @@ let str3 = str1 + str2
 
 // console.log((3 + 4) * 5 % 3);
 
-// console.log(+true); //1 //if we add + then we get output in number or else output is true
+// console.log(+true); //1 //if we add + then we get output 1 / output is true
 // console.log(+false);//0
 // console.log(+"");//0
 

@@ -4,7 +4,7 @@
 
 
 // console.log(null > 0); //null =>0
-// console.log(null > 0);// null =>0
+// console.log(null < 0);// null =>0
 // console.log(null >= 0); // comparison operater converts null => 0 so output will be true
 
 
