@@ -21,12 +21,12 @@ console.log(username);
 
         
     }
-    // console.log(website);
+    // console.log(website);// it will not work out of scope
     two()//if it not called than the function one will never executed
 
 }
 
-// one()
+one()
 
 //++++++++++++++++++++++++++++++++interesting++++++++++++++++++++++++++++++
 

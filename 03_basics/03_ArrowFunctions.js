@@ -1,5 +1,5 @@
 //there is no this in arrow function
-
+// We use this when we want to access the current object’s values inside its function.
 const user = {
     username: "deepak",
     price: 999,
@@ -24,19 +24,19 @@ const user = {
 
 
 
-// function check(){
-//     // let username = "deepak"
-//     console.log(this);
+function check(){
+    // let username = "deepak"
+    console.log(this);
     
-// }
+}
 
 // check()    //output will undefine because username  is in function
 
-const bhai = () => {
-    let username = "bhaiIs Back"
-    console.log(this);//this works in arrow function but not in regular function
+// const bhai = () => {
+//     let username = "bhaiIs Back"
+//     console.log(this);//this works in arrow function but not in regular function
         
-}
+// }
 
 // bhai()
 
@@ -54,4 +54,4 @@ const bhai = () => {
 
 //how to return object value in arrow function
 const addTwo = (num1, num2) =>  ({username: "deepak"})
-console.log(addTwo(3, 6))
+// console.log(addTwo(3, 6))
