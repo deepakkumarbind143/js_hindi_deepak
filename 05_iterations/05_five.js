@@ -15,11 +15,11 @@ const coding = ["js", "ruby", "java", "python", "dart"]
 
 //calling function with reference
 
-// function printMe(item) {
-// console.log(item);
+function printMe(item) {
+console.log(item);
 
-// }
-// coding.forEach(printMe)
+}
+coding.forEach(printMe)
 
 
 // for each always have value, index, array
