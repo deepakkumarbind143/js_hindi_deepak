@@ -66,5 +66,51 @@ const y2 = x2++;
 
 
 
+// In JavaScript, var does not care about if statements or for loops. It only cares about Functions.
 
 
+// if (true) {
+//   var snack = "Chips";
+// }
+// console.log(snack); // Works!
+
+// Now the engine starts running the code from top to bottom:
+
+// Line 1: It ignores the var (since it already handled it).
+
+// Line 2: It enters the if (true) block.
+
+// Line 3: It sees snack = "Chips". This is the key! It takes that undefined variable and overwrites it with the string "Chips".
+
+// Line 4: It hits console.log(snack). Since the variable was updated in Step 3, it prints "Chips".
+
+
+// {
+//   // --- START OF BLOCK ---
+//   // TDZ Starts here for 'pizza'
+  
+//   console.log(greeting); // Output: undefined (because of var)
+//   console.log(pizza);    // ReferenceError: Cannot access 'pizza' before initialization
+//                          // ^ This is the TDZ in action!
+
+//   var greeting = "Hi";
+//   let pizza = "Pepperoni"; // TDZ Ends here for 'pizza'
+  
+//   console.log(pizza);    // Output: "Pepperoni"
+// }
+
+/*
+In JavaScript, it's about the Temporal Dead Zone (TDZ). 
+The variable exists in the block from the moment the code starts running,
+ but it's "locked." If you try to touch it before the let or const line, JS throws a Runtime Error.*/
+
+
+ //************ CONST******** */
+
+ 
+//  In JS, const only means "The variable name cannot be reassigned." It does not mean the value is immutable (unchangeable)
+
+// const myArray = [1, 2];
+// myArray.push(3); // WORKS! You changed the contents, but not the variable itself.
+
+// myArray = [4]; // ERROR! You tried to reassign the name.

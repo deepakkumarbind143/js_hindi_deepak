@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+
+    <div id="container">
+
+    </div>
+</body>
+<script>
+    const requestUrl = 'https://randomuser.me/api/'
+  const xhr = new XMLHttpRequest();
+  xhr.open('GET', requestUrl) // not continues track
+xhr.onreadystatechange = function(){
+    // console.log(xhr.readyState);
+
+    if(xhr.readyState === 4 && xhr.status === 200){
+        // console.log(this.responseText)
+        const data = JSON.parse(this.responseText)
+        // console.log(typeof data)
+        const user = data.results[0];
+        console.log(user.name.first)
+
+        const img = document.createElement("img");
+        img.src = user.picture.large;
+        img.alt = user.name.first;
+        img.style.borderRadius = "50%";
+
+      document.getElementById("container").appendChild(img);
+   
+    }
+}
+  
+  xhr.send()
+
+</script>
+</html>
