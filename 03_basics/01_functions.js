@@ -73,3 +73,24 @@ function returnSecondValue(getArray){
 
 // console.log(returnSecondValue(myNewArray));
 // console.log(returnSecondValue([200, 700, 800, 9000]));
+
+
+const price = [10, 20, 30, 40, 50]
+
+// .map(): Transforms every item in an array.
+
+const salesprice = price.map(p => p * 0.9)
+
+console.log(salesprice)
+
+// .filter(): Removes items based on a condition.
+
+const expensive = price.filter(p => p < 40)
+
+console.log(expensive)
+
+// .find(): Grabs the first item that matches.
+
+const specificprice = price.find( p => p === 20)
+
+console.log(`the price range is  ${ specificprice }`)
