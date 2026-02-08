@@ -6,7 +6,7 @@
 const mysym = Symbol("key1")
 
 const JsUser = {
-    name: "Deepak",
+    name: "Deepak", 
 
     "full name": "Deepak kumar ",
 
@@ -80,6 +80,7 @@ console.log("-----------UPDATING AND ADDING---------")
 intern.skills[2] = "dart"
 intern.isReady = false
 intern.greet = function(){
+
   return "hello its an update"
 }
 console.log("-----------PRINITING ELEMENT OF ARRAY---------")
@@ -101,6 +102,7 @@ const updatedinter = {
 
  const { isReady : ready, firstName : name} = updatedinter;
 console.log(ready)
-console.log(name)
+console.log(surname)
 // Spread (...) creates a new object.
 // The old object (intern) stays exactly the same.
+// , you could use Object.defineProperty() to make just that one property "writable: false
