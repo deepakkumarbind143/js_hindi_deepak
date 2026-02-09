@@ -21,6 +21,7 @@ function addTwoNumber(number1, number2){
 return number1 + number2
 
 }
+
 const result = addTwoNumber(4, 6)
 // console.log("Result: ", result);// this will give undefine output 
 
@@ -35,7 +36,7 @@ function loginUserMessage(username = "bro"){//bro is default value
 // console.log(loginUserMessage('deepak'))
 
 
-//this is reast operater ... also know as spread operater varies on use
+//this is rest operater ... also know as spread operater varies on use
 //rest ,It collects all remaining arguments into an array.
 function calculateCartPrice(val1, val2, ...num1){//before adding val1, val2, 
 //...num1 is a rest parameter that gathers all remaining arguments into an array after val1 and val2 are assigned.
@@ -58,15 +59,15 @@ function handleObject(anyobject){
 
 // handleObject(user)
 
-(handleObject({
+handleObject({
     username: "sam",
     price: 1999
-}))
+})
 
 //you can pass array to function
 const myNewArray  = [200, 400, 100, 600]
 
-function returnSecondValue(getArray){
+function returnSecondValue(getArray){//in getArray  the reference of myNewArray is stored
     return getArray[1]
 }
 
@@ -83,7 +84,7 @@ const salesprice = price.map(p => p * 0.9)
 
 console.log(salesprice)
 
-// .filter(): Removes items based on a condition.
+// .filter(): Removes items based on a condition. 
 
 const expensive = price.filter(p => p < 40)
 
@@ -94,3 +95,42 @@ console.log(expensive)
 const specificprice = price.find( p => p === 20)
 
 console.log(`the price range is  ${ specificprice }`)
+
+
+// In JavaScript, when you use .filter() or .find(),
+//  you don't need a for loop. These methods loop through the array for you!
+
+//call back function //p => p.name === "keyboard"
+
+// Problem Statement 2: The "Inventory Search" (Filter & Find)
+// A store manager wants to find specific products from a list based on their budget.
+
+// Your Task:
+
+// Create an array of objects called products. Each object should have a name and a price.
+
+// Write a function checkInventory that takes this array as a parameter.
+
+// Inside the function:
+
+// Use .filter() to create a new array of products that cost less than 500.
+
+// Use .find() to find the first product named "Keyboard".
+
+// Return an object containing both the filtered list and the found item.
+
+// Print the final result.
+
+// function checkInventory(arr) {
+//   // .filter() returns a new array of items that pass the test
+//   const reasonablePrice = arr.filter(p => p.price < 500);
+
+//   // .find() returns the first object where the name matches
+//   const keyboard = arr.find(p => p.name === "keyboard");
+
+//   // Simply return an object with the results
+//   return {
+//     offer: reasonablePrice,
+//     foundItem: keyboard
+//   };
+// }
