@@ -55,3 +55,26 @@ function check(){
 //how to return object value in arrow function
 const addTwo = (num1, num2) =>  ({username: "deepak"})
 console.log(addTwo(3, 6))
+
+
+// The Fix (The "Intern Pro" Way):
+//  To make it work, the outer method should be a regular function (so it "grabs" the object), 
+// and the inner function (inside setTimeout) should be an arrow function (so it "borrows" the object from the outer one).
+
+const smartWatch = {
+  brand: "Apple",
+  showBrandPerfect: function() {
+    // Regular function here captures 'smartWatch' as 'this'
+    setTimeout(() => {
+      // Arrow function here borrows 'this' from showBrandPerfect
+      console.log("Perfect way:", this.brand); 
+    }, 1000);
+  }
+}
+
+smartWatch.showBrandPerfect(); // Prints: Apple
+
+// The Real-World Logic
+// In a React internship, you will use this all the time.
+//  When you fetch data and want to update the "State" after the data arrives, you must use an arrow function inside your .then() or setTimeout.
+//  If you don't, your code won't know which component it’s supposed to update!

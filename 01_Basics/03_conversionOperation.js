@@ -114,3 +114,16 @@ The variable exists in the block from the moment the code starts running,
 // myArray.push(3); // WORKS! You changed the contents, but not the variable itself.
 
 // myArray = [4]; // ERROR! You tried to reassign the name.
+
+//syntax
+//Number.isNan // to check is the input is not a number
+// arr instanceof Array // to check object
+//
+
+
+//methods
+
+//includes() // is a method used to check whether something exists inside something  else
+//indexOf() // positio based check
+//startWith() //start check
+//endsWith() // ends check

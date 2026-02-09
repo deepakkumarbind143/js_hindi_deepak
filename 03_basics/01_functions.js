@@ -130,7 +130,7 @@ console.log(`the price range is  ${ specificprice }`)
 
 //   // Simply return an object with the results
 //   return {
-//     offer: reasonablePrice,
+//     offer: reasonablePrice, // behiind the sene a temporary object is created
 //     foundItem: keyboard
 //   };
 // }

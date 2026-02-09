@@ -106,3 +106,42 @@ console.log(surname)
 // Spread (...) creates a new object.
 // The old object (intern) stays exactly the same.
 // , you could use Object.defineProperty() to make just that one property "writable: false
+
+
+// Old way (still valid)
+// function greet(user) {
+//   console.log(user.username);
+// }
+
+
+// Modern / internship way
+// function greet({ username }) { //is just destructuring happening immediately.
+//   console.log(username);
+// }
+
+// t’s equivalent to:
+
+// function greet(user) {
+//   const { username } = user;
+//   console.log(username);
+// }
+
+
+// function printProfile({ username, email }) {
+//   console.log(username, email);
+// }
+
+// printProfile({
+//   username: "noName",
+//   email: "test@mail.com",
+//   age: 25
+// });
+
+// Key rule
+
+// Arrow functions do NOT have their own this
+
+// They borrow this from the outer scope.
+
+// or don’t destructure methods that use this.
+//optional solution == greet.call(user);

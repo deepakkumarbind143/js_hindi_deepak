@@ -41,3 +41,12 @@ score2 = 200
 score3 = 300
 //this will create array of score
 console.log(Array.of(score1, score2, score3));
+
+// Array.isArray() is a built-in JavaScript method used to check:
+
+// 👉 “Is this value really an Array?”
+
+// isArray is not a keyword
+// It’s a method on Array
+// It exists because typeof can’t detect arrays
+// It’s the most reliable way to check arrays in JS

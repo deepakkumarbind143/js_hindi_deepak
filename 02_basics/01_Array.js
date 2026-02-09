@@ -3,6 +3,10 @@
 const myArr = [0, 1, 2, 3, 4, 5]
 const myHero = ["deepak", "bhai"]
 const myArr2 = new Array(1, 2, 3, 4) 
+// new Array(1, 2) // array with values
+//new Array(5)  //empty array of lenght 5 // Array() it is a constructor
+
+
 // console.log(  myArr);
 
 // Array methods
@@ -15,7 +19,7 @@ const myArr2 = new Array(1, 2, 3, 4)
 // console.log(myArr.shift())//Removes the first element of the array
 
 // console.log(myArr.includes(9));//return true of false by checking number exist or not
-// console.log(myArr.indexOf(3));//if number not exist then the output will be -1 or 3
+// console.log(myArr.indexOf(3));//if number not exist then the output will be -1 and if exist the o/p 3
 
 const newArray = myArr.join()//Converts an array into a string
 
