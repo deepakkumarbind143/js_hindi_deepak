@@ -34,7 +34,7 @@ function check(){
 
 // const bhai = () => {
 //     let username = "bhaiIs Back"
-//     // console.log(this);//this works in arrow function but not in regular function
+//     // console.log(this);// this does NOT work in arrow functions, but works in regular functions
 //         return username
 // }
 
@@ -53,5 +53,5 @@ function check(){
 
 
 //how to return object value in arrow function
-// const addTwo = (num1, num2) =>  ({username: "deepak"})
-// console.log(addTwo(3, 6))
+const addTwo = (num1, num2) =>  ({username: "deepak"})
+console.log(addTwo(3, 6))
