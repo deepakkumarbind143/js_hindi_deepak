@@ -30,3 +30,11 @@ const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 // console.log(newNums);
 
 
+// Use filter
+//  when you want to show only "Electronics" or products "Under $500$".
+//  It’s clean and doesn't require you to create an empty array manually.
+
+// Use forEach
+//  when you want to perform an action that doesn't create a list, like sending a notification for every item in the cart.
+
+// Your "published" filter correctly uses the return keyword because you opened curly braces {}. Remember: If you open the "Scope" (the braces), you must use return!

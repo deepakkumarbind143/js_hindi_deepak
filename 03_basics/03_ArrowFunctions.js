@@ -78,3 +78,4 @@ smartWatch.showBrandPerfect(); // Prints: Apple
 // In a React internship, you will use this all the time.
 //  When you fetch data and want to update the "State" after the data arrives, you must use an arrow function inside your .then() or setTimeout.
 //  If you don't, your code won't know which component it’s supposed to update!
+

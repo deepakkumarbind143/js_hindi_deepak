@@ -39,7 +39,7 @@ const myObject = {
     game2: 'Spiderman'
 }
 
-// for (const [key, value] of myObject) {  // this for loop not work on objeect
+// for (const [key, value] of myObject) {  // this for loop not work on object
 //     console.log(key);
     
 // }

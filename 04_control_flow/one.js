@@ -1,6 +1,6 @@
 //if
 
-//im this i have added that ia needed to rememver beacause u already know
+//im this i have added that is needed to remember beacause u already know
 const balance = 1000
 
 

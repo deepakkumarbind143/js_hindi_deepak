@@ -33,3 +33,14 @@ console.log(myTotal);
 
 //  const priceToPay = shopping.reduce((acc, item)=> acc + item.price, 0 )
 // console.log(priceToPay);
+
+// (acc, item, index, arr)
+// Why _ is commonly used
+// (_, item) => { ... }
+
+
+// Means:
+
+// “Yes, JS passes this argument, but I’m intentionally not using it.”
+
+// You’ll see this a LOT in professional code.

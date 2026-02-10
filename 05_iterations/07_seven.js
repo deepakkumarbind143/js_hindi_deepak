@@ -9,3 +9,4 @@ const newNums = mynumber
         .map((num)=> num + 1)// array will update with num +1 and store as final value
         .filter((num)=> num >= 40)// use for thrue or false work
 console.log(newNums);
+
