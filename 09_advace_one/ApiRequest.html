@@ -26,6 +26,7 @@ xhr.onreadystatechange = function(){
         console.log(user.name.first)
 
         const img = document.createElement("img");
+        
         img.src = user.picture.large;
         img.alt = user.name.first;
         img.style.borderRadius = "50%";
