@@ -7,8 +7,8 @@ let valueInNumber= Number(score)
 // console.log(typeof valueInNumber)//number
 // console.log(valueInNumber)// Nan
 
-//"33" =>33    // we convert this in number
-//"33an"=>NaN  // we canont convert this in number
+//"33" =>33    // we can convert this in number
+//"33an"=>NaN  // we can not convert this in number
 //true =>1; false=>0  
 
 let isLoggedIn="d"
@@ -37,7 +37,7 @@ let str1 = "hello"
 let str2 = " deepak"
 let str3 = str1 + str2
 // console.log(str3);// hello deepak
-
+  
 
 // console.log("1" + 1);        // 11
 // console.log(1 + "2");     //12

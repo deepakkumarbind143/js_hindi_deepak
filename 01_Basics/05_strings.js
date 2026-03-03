@@ -5,7 +5,7 @@ const repoCount = 50
 
 // console.log(name + repoCount + " marks");
 
-console.log(`hello my name is ${name} and my repo count is ${repoCount}`);
+console.log(`hello my name is ${name} and my repo cou nt is ${repoCount}`);
 
 const gameName = new String(`deepak-bind`)
 //when you used new key word you used object
